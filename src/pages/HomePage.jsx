@@ -13,6 +13,15 @@ export default function HomePage() {
             convenienti e consegna veloce.
           </p>
 
+          {/* Immagine banner promozionale */}
+          <div className="w-50 mx-auto mb-5">
+            <img
+              src="public/img/online-shopping.png"
+              alt="Offerta promozionale"
+              className="img-fluid rounded shadow"
+            />
+          </div>
+
           {/* Sezione vantaggi */}
           <div className="row text-center mb-5">
             <div className="col-md-4 mb-4">

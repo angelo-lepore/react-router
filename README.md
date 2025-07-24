@@ -22,4 +22,3 @@ Bonus
 
 - Centralizziamo la Navbar usando un componente Layout
 - Gestiamo la classe active per i link attivi nella Navbar
-- Confermate lettura come al solito e buon divertimento :baby-yoda:
