@@ -1,18 +1,16 @@
-//
+// Import Outlet
 import { Outlet } from "react-router-dom";
 
+// Import Header
+import Header from "../components/Header";
+
+// Layout di default
 export default function DefaultLayout() {
   return (
     <>
-      <header>
-        <h1>header</h1>
-      </header>
+      <Header />
 
       <Outlet />
-
-      <footer>
-        <h1>footer</h1>
-      </footer>
     </>
   );
 }
