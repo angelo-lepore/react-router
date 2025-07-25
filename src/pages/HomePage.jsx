@@ -16,7 +16,7 @@ export default function HomePage() {
           {/* Immagine banner promozionale */}
           <div className="w-50 mx-auto mb-5">
             <img
-              src="public/img/online-shopping.png"
+              src="/img/online-shopping.png"
               alt="Offerta promozionale"
               className="img-fluid rounded shadow"
             />

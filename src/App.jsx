@@ -11,6 +11,7 @@ import DefaultLayout from "./layout/DefaultLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ProductsPage from "./pages/ProductsPage.jsx";
+import SingleProduct from "./pages/SingleProduct.jsx";
 
 // Componente principale dell'applicazione
 function App() {
@@ -23,6 +24,7 @@ function App() {
             {/* Rotte principali */}
             <Route path="/" Component={HomePage} />
             <Route path="/products" Component={ProductsPage} />
+            <Route path="/products/:id" Component={SingleProduct} />
             <Route path="/about" Component={AboutPage} />
           </Route>
         </Routes>
