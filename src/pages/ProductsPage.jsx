@@ -1,5 +1,7 @@
 // Import degli hook di React
 import { useState, useEffect } from "react";
+
+// Import Link
 import { Link } from "react-router-dom";
 
 export default function ProductsPage() {
@@ -34,7 +36,12 @@ export default function ProductsPage() {
                     />
                   </Link>
                   <div className="card-body d-flex flex-column">
-                    <h6 className="card-title fw-semibold">{title}</h6>
+                    <Link
+                      to={`/products/${id}`}
+                      className="text-decoration-none text-dark"
+                    >
+                      <h6 className="card-title fw-semibold">{title}</h6>
+                    </Link>
                     <p className="card-text text-muted text-capitalize small mb-2">
                       {category}
                     </p>
@@ -43,7 +50,7 @@ export default function ProductsPage() {
                         ${price.toFixed(2)}
                       </span>
                       <button className="btn btn-outline-dark btn-sm">
-                        Aggiungi
+                        Aggiungi al carrello <i className="bi bi-cart-plus"></i>
                       </button>
                     </div>
                   </div>
