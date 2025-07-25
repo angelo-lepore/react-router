@@ -1,4 +1,6 @@
-//
+// Import Link
+import { Link } from "react-router-dom";
+
 export default function NotFoundPage() {
   return (
     <>
@@ -8,9 +10,9 @@ export default function NotFoundPage() {
         </div>
         <h1 className="display-3 fw-bold">404</h1>
         <p className="fs-4">Oops! The page you're looking for doesn't exist.</p>
-        <a href="/" className="btn btn-outline-light btn-lg mt-3">
+        <Link to="/" className="btn btn-outline-light btn-lg mt-3">
           <i className="bi bi-house-door-fill me-2"></i> Go back home
-        </a>
+        </Link>
       </div>
     </>
   );

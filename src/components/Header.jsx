@@ -1,14 +1,14 @@
-// Import NavLink
-import { NavLink } from "react-router-dom";
+// Import NavLink e Link
+import { NavLink, Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
         {/* Brand/logo */}
-        <NavLink className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/">
           <i className="bi bi-shop me-2"></i> MyStore
-        </NavLink>
+        </Link>
 
         {/* Bottone per mobile */}
         <button

@@ -1,5 +1,5 @@
-// Import NavLink
-import { NavLink } from "react-router-dom";
+// Import Link
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -45,12 +45,12 @@ export default function HomePage() {
 
           {/* Tasto prodotti */}
           <div className="text-center">
-            <NavLink
+            <Link
               to="/products"
               className="btn btn-dark text-light btn-lg px-5"
             >
               Esplora i Prodotti
-            </NavLink>
+            </Link>
           </div>
         </div>
       </main>
