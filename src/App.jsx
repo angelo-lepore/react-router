@@ -9,9 +9,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Import del layout e delle pagine
 import DefaultLayout from "./layout/DefaultLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
 import ProductsPage from "./pages/ProductsPage.jsx";
 import SingleProduct from "./pages/SingleProduct.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 // Componente principale dell'applicazione
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/products" Component={ProductsPage} />
             <Route path="/products/:id" Component={SingleProduct} />
             <Route path="/about" Component={AboutPage} />
+            <Route path="*" Component={NotFoundPage} />
           </Route>
         </Routes>
       </BrowserRouter>
